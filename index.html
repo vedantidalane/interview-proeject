@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Technologies | Turning Ideas Into Digital Solutions</title>
+  <meta name="description" content="Nexora Technologies is a modern, scale-focused IT consulting and development agency. We build professional websites, mobile apps, software solutions, and security architectures.">
+  
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <i class="bi bi-cpu text-primary"></i>
+        <span>Nexora</span> Technologies
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="#services-web">Web Development</a></li>
+              <li><a class="dropdown-item" href="#services-mobile">Mobile App Development</a></li>
+              <li><a class="dropdown-item" href="#services-design">UI/UX Design</a></li>
+              <li><a class="dropdown-item" href="#services-cloud">Cloud Solutions</a></li>
+              <li><a class="dropdown-item" href="#services-software">Software Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technologies">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-fill"></i>
+              <i class="bi bi-sun-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrappers -->
+  <main>
+    <!-- SECTION: HERO -->
+    <section id="hero" class="hero-sec">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-sub font-headings">Digital Innovation Partner</span>
+            <h1 class="hero-title">We Build <span>Digital Experiences</span> That Drive Business Growth</h1>
+            <p class="hero-desc">From websites and mobile applications to scalable software solutions, we help businesses transform ideas into powerful digital products.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#contact" class="btn-custom btn-custom-primary">
+                Start a Project <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#services" class="btn-custom btn-custom-secondary">
+                Explore Services <i class="bi bi-briefcase"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-visual-wrapper">
+            <!-- Sleek SVG Dashboard Mockup -->
+            <svg class="hero-svg-mockup img-fluid" width="520" height="380" viewBox="0 0 520 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Nexora Dashboard Mockup">
+              <!-- Window background -->
+              <rect width="520" height="380" rx="16" fill="var(--card-bg)" />
+              <!-- Window top bar border -->
+              <line x1="0" y1="44" x2="520" y2="44" stroke="var(--card-border)" stroke-width="1.5" />
+              <!-- Window control dots -->
+              <circle cx="24" cy="22" r="6" fill="#ff5f56" />
+              <circle cx="42" cy="22" r="6" fill="#ffbd2e" />
+              <circle cx="60" cy="22" r="6" fill="#27c93f" />
+              <!-- Mock URL bar -->
+              <rect x="92" y="12" width="336" height="20" rx="6" fill="var(--bg-tertiary)" />
+              <text x="104" y="26" fill="var(--text-muted)" font-family="var(--font-body)" font-size="10" font-weight="600" opacity="0.6">nexora.io/analytics</text>
+              <!-- Refresh/Next indicators -->
+              <circle cx="496" cy="22" r="6" fill="var(--text-muted)" opacity="0.4" />
+              <circle cx="478" cy="22" r="6" fill="var(--text-muted)" opacity="0.4" />
+
+              <!-- Left Sidebar layout -->
+              <rect x="0" y="44" width="70" height="336" fill="var(--bg-secondary)" />
+              <line x1="70" y1="44" x2="70" y2="380" stroke="var(--card-border)" stroke-width="1.5" />
+              <!-- Sidebar icons mock -->
+              <rect x="18" y="70" width="34" height="6" rx="3" fill="var(--accent-color)" />
+              <circle cx="35" cy="110" r="10" fill="var(--text-muted)" opacity="0.15" />
+              <circle cx="35" cy="150" r="10" fill="var(--text-muted)" opacity="0.15" />
+              <circle cx="35" cy="190" r="10" fill="var(--text-muted)" opacity="0.15" />
+              <circle cx="35" cy="230" r="10" fill="var(--text-muted)" opacity="0.15" />
+
+              <!-- Main Dashboard Area -->
+              <text x="96" y="86" fill="var(--text-primary)" font-family="var(--font-headings)" font-size="16" font-weight="800">Deployment Overview</text>
+              <!-- Success Indicator Badge -->
+              <rect x="390" y="71" width="105" height="22" rx="11" fill="rgba(16, 185, 129, 0.12)" />
+              <circle cx="402" cy="82" r="4" fill="var(--success-color)" class="animated-pulse-dot" />
+              <text x="414" y="86" fill="var(--success-color)" font-family="var(--font-body)" font-size="9" font-weight="700">SYSTEMS ACTIVE</text>
+
+              <!-- Main Grid Grid-Cards -->
+              <!-- Card 1: Line Chart -->
+              <rect x="96" y="112" width="220" height="130" rx="10" fill="var(--bg-secondary)" stroke="var(--card-border)" stroke-width="1.5" />
+              <text x="112" y="132" fill="var(--text-muted)" font-family="var(--font-body)" font-size="9" font-weight="700">WEEKLY VISITS</text>
+              <text x="112" y="152" fill="var(--text-primary)" font-family="var(--font-headings)" font-size="16" font-weight="800">+128.4%</text>
+              <!-- Line Chart SVG Path -->
+              <path d="M112 216 L140 200 L168 208 L196 172 L224 186 L252 152 L280 168 L296 142" stroke="var(--accent-color)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M112 216 L140 200 L168 208 L196 172 L224 186 L252 152 L280 168 L296 142 L296 220 L112 220 Z" fill="url(#blue-gradient-glow)" />
+
+              <!-- Card 2: Bar Chart -->
+              <rect x="332" y="112" width="162" height="130" rx="10" fill="var(--bg-secondary)" stroke="var(--card-border)" stroke-width="1.5" />
+              <text x="348" y="132" fill="var(--text-muted)" font-family="var(--font-body)" font-size="9" font-weight="700">SERVER DEPLOYMENTS</text>
+              <g>
+                <!-- Series of responsive bars with animations -->
+                <rect x="358" y="160" width="8" height="60" rx="4" fill="var(--secondary-accent)" class="animated-grid-bar" />
+                <rect x="376" y="150" width="8" height="70" rx="4" fill="var(--accent-color)" class="animated-grid-bar-2" />
+                <rect x="394" y="170" width="8" height="50" rx="4" fill="var(--secondary-accent)" class="animated-grid-bar" />
+                <rect x="412" y="140" width="8" height="80" rx="4" fill="var(--accent-color)" class="animated-grid-bar-2" />
+                <rect x="430" y="165" width="8" height="55" rx="4" fill="var(--accent-color)" class="animated-grid-bar" />
+                <rect x="448" y="155" width="8" height="65" rx="4" fill="var(--secondary-accent)" class="animated-grid-bar-2" />
+                <rect x="466" y="145" width="8" height="75" rx="4" fill="var(--accent-color)" class="animated-grid-bar" />
+              </g>
+
+              <!-- Card 3: Code Console -->
+              <rect x="96" y="258" width="398" height="98" rx="10" fill="#090d16" />
+              <!-- Small circles decoration -->
+              <circle cx="116" cy="274" r="3" fill="#cbd5e1" opacity="0.3" />
+              <circle cx="126" cy="274" r="3" fill="#cbd5e1" opacity="0.3" />
+              <text x="142" y="278" fill="#475569" font-family="monospace" font-size="8">terminal.js --status</text>
+              <text x="112" y="298" fill="#38bdf8" font-family="monospace" font-size="9">&gt; npm run release:prod</text>
+              <text x="112" y="314" fill="#a7f3d0" font-family="monospace" font-size="9">✓ Build compiled successfully in 1.48s [v1.4.2]</text>
+              <text x="112" y="330" fill="#f8fafc" font-family="monospace" font-size="9">✓ Synced cluster nodes in Pune [AWS AP-SOUTH-1] -- OK</text>
+
+              <!-- Hovering Glassmorphic Card -->
+              <g class="animated-float-card" transform="translate(18, 220)">
+                <rect width="138" height="52" rx="10" fill="var(--card-bg)" filter="url(#drop-shadow)" stroke="var(--card-border)" stroke-width="1.5" />
+                <!-- Mini icon box -->
+                <rect x="12" y="12" width="28" height="28" rx="6" fill="rgba(99, 102, 241, 0.15)" />
+                <text x="21" y="31" fill="var(--secondary-accent)" font-family="var(--font-headings)" font-size="16" font-weight="850">↗</text>
+                <text x="48" y="25" fill="var(--text-primary)" font-family="var(--font-headings)" font-size="10" font-weight="700">Conversion</text>
+                <text x="48" y="36" fill="var(--success-color)" font-family="var(--font-body)" font-size="9" font-weight="600">+24.8% spike</text>
+              </g>
+
+              <!-- Gradients & Shadows definitions -->
+              <defs>
+                <linearGradient id="blue-gradient-glow" x1="204" y1="142" x2="204" y2="220" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="var(--accent-color)" stop-opacity="0.25" />
+                  <stop offset="100%" stop-color="var(--accent-color)" stop-opacity="0.0" />
+                </linearGradient>
+                <filter id="drop-shadow" x="-4" y="-2" width="154" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.1" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: STATS -->
+    <section id="stats" class="stats-sec">
+      <div class="container">
+        <div class="row g-4 justify-content-center text-center">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-number" data-target="50" data-suffix="+">0</div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-number" data-target="30" data-suffix="+">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-number" data-target="5" data-suffix="+">0</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-number" data-target="15" data-suffix="+">0</div>
+              <div class="stat-label">Technology Experts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT -->
+    <section id="about" class="reveal py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 about-img-box">
+            <!-- Interconnected Software Design Vector Illustration -->
+            <svg class="about-svg-box img-fluid" width="520" height="380" viewBox="0 0 520 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Nexora Tech Workflow">
+              <rect width="520" height="380" rx="16" fill="var(--card-bg)" />
+              
+              <!-- Background grid matrix -->
+              <path d="M 40,0 L 40,380 M 80,0 L 80,380 M 120,0 L 120,380 M 160,0 L 160,380 M 200,0 L 200,380 M 240,0 L 240,380 M 280,0 L 280,380 M 320,0 L 320,380 M 360,0 L 360,380 M 400,0 L 400,380 M 440,0 L 440,380 M 480,0 L 480,380" stroke="var(--card-border)" stroke-width="0.5" opacity="0.3" />
+              <path d="M 0,40 L 520,40 M 0,80 L 520,80 M 0,120 L 520,120 M 0,160 L 520,160 M 0,200 L 520,200 M 0,240 L 520,240 M 0,280 L 520,280 M 0,320 L 520,320 M 0,360 L 520,360" stroke="var(--card-border)" stroke-width="0.5" opacity="0.3" />
+
+              <!-- Core Laptop/Screen Vector -->
+              <rect x="130" y="100" width="260" height="160" rx="10" fill="var(--bg-secondary)" stroke="var(--card-border)" stroke-width="2" />
+              <rect x="142" y="112" width="236" height="120" rx="6" fill="#090d16" />
+              <!-- Laptop Keyboard Base -->
+              <path d="M100 260 L420 260 L440 280 L80 280 Z" fill="var(--bg-tertiary)" stroke="var(--card-border)" stroke-width="2" />
+              <rect x="220" y="266" width="80" height="6" rx="3" fill="var(--text-muted)" opacity="0.3" />
+
+              <!-- Code lines inner screen -->
+              <rect x="156" y="128" width="80" height="6" rx="3" fill="var(--accent-color)" />
+              <rect x="156" y="140" width="120" height="6" rx="3" fill="var(--secondary-accent)" />
+              <rect x="156" y="152" width="60" height="6" rx="3" fill="var(--success-color)" />
+              <rect x="156" y="164" width="100" height="6" rx="3" fill="var(--accent-color)" />
+
+              <!-- Connected Cloud Component -->
+              <g class="animated-float-card">
+                <rect x="360" y="50" width="90" height="50" rx="10" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="1.5" filter="url(#about-shadow)" />
+                <circle cx="384" cy="75" r="12" fill="rgba(14, 165, 233, 0.15)" />
+                <!-- Cloud Icon drawing -->
+                <path d="M380 77 A 4 4 0 0 1 382 71 A 6 6 0 0 1 391 73 A 4 4 0 0 1 390 77 Z" fill="var(--accent-color)" />
+                <text x="404" y="78" fill="var(--text-primary)" font-family="var(--font-headings)" font-size="10" font-weight="700">Cloud</text>
+              </g>
+
+              <!-- Connected Security Component -->
+              <g class="animated-float-card-reverse">
+                <rect x="70" y="210" width="100" height="50" rx="10" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="1.5" filter="url(#about-shadow)" />
+                <circle cx="94" cy="235" r="12" fill="rgba(16, 185, 129, 0.15)" />
+                <!-- Shield Icon drawing -->
+                <path d="M94 227 L99 230 V236 C99 240 94 243 94 243 C94 243 89 240 89 236 V230 Z" fill="var(--success-color)" />
+                <text x="114" y="238" fill="var(--text-primary)" font-family="var(--font-headings)" font-size="10" font-weight="700">Secure</text>
+              </g>
+
+              <!-- Connection dotted line graphics -->
+              <path d="M 380,85 C 380,120 280,130 280,130" stroke="var(--text-muted)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+              <path d="M 140,225 C 140,165 240,165 240,165" stroke="var(--text-muted)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+
+              <filter id="about-shadow" x="-5" y="-2" width="115" height="66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.08" />
+              </filter>
+            </svg>
+          </div>
+          <div class="col-lg-6">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title d-block">Technology That Moves Your Business Forward</h2>
+            <p class="text-secondary mb-4">At Nexora Technologies, we specialize in partnering with companies globally to design, build, and deploy custom enterprise-grade apps and digital systems. Our focus is to deliver clean structures, safe storage, and smooth product operations that allow you to grow without restriction.</p>
+            
+            <div class="benefit-list">
+              <div class="benefit-item">
+                <i class="bi bi-patch-check-fill"></i> Scalable Solutions
+              </div>
+              <div class="benefit-item">
+                <i class="bi bi-patch-check-fill"></i> User-Centered Design
+              </div>
+              <div class="benefit-item">
+                <i class="bi bi-patch-check-fill"></i> Modern Technology
+              </div>
+              <div class="benefit-item">
+                <i class="bi bi-patch-check-fill"></i> Reliable Support
+              </div>
+            </div>
+            
+            <a href="#services" class="btn-custom btn-custom-primary">
+              Learn More <i class="bi bi-arrow-down-short"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SERVICES -->
+    <section id="services" class="reveal py-5">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Our Services</span>
+          <h2 class="section-title d-block">Our Digital Solutions</h2>
+          <p class="section-desc">Everything you need to build, launch, and scale your digital presence.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Web Development Service Card -->
+          <div class="col-lg-4 col-md-6" id="services-web">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">Responsive, fast, and scalable websites and web applications built using industry-grade frameworks.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+          
+          <!-- Mobile App Development Service Card -->
+          <div class="col-lg-4 col-md-6" id="services-mobile">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3 class="service-title">Mobile App Development</h3>
+              <p class="service-desc">Engaging Android and iOS applications designed with high performance and native responsiveness.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- UI/UX Designing Service Card -->
+          <div class="col-lg-4 col-md-6" id="services-design">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-vector-pen"></i>
+              </div>
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-desc">Intuitive, wireframed user pathways and visually stunning landing layouts designed around business needs.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Software Development Service Card -->
+          <div class="col-lg-4 col-md-6" id="services-software">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="service-title">Software Development</h3>
+              <p class="service-desc">Custom modular business tools, software integrations, and desktop apps designed for operation control.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Cloud Solutions Service Card -->
+          <div class="col-lg-4 col-md-6" id="services-cloud">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <h3 class="service-title">Cloud Solutions</h3>
+              <p class="service-desc">Secure, containerized cloud architectural migrations, server hosting, and API integrations.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Digital Consulting Service Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="services-card">
+              <div class="service-icon-box">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3 class="service-title">Digital Consulting</h3>
+              <p class="service-desc">Rigorous tech stack selections, security health tests, and digital growth consulting for growing businesses.</p>
+              <a href="#contact" class="service-btn">Learn More <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TECHNOLOGIES -->
+    <section id="technologies" class="reveal py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-tag">Our Tools</span>
+            <h2 class="section-title d-block">Technologies We Work With</h2>
+            <p class="text-secondary">We select the most optimal, secure, and modern libraries to build product solutions that scale dynamically in performance and reliability.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="tech-container">
+              <div class="tech-badge"><i class="bi bi-filetype-html tech-html"></i> HTML5</div>
+              <div class="tech-badge"><i class="bi bi-filetype-css tech-css"></i> CSS3</div>
+              <div class="tech-badge"><i class="bi bi-filetype-js tech-js"></i> JavaScript</div>
+              <div class="tech-badge"><i class="bi bi-bootstrap-fill tech-bs"></i> Bootstrap</div>
+              <div class="tech-badge"><i class="bi bi-arrow-repeat tech-react"></i> React</div>
+              <div class="tech-badge"><i class="bi bi-cup-hot-fill tech-java"></i> Java</div>
+              <div class="tech-badge"><i class="bi bi-leaf-fill tech-spring"></i> Spring Boot</div>
+              <div class="tech-badge"><i class="bi bi-node-plus-fill tech-node"></i> Node.js</div>
+              <div class="tech-badge"><i class="bi bi-database-fill tech-sql"></i> MySQL</div>
+              <div class="tech-badge"><i class="bi bi-git tech-git"></i> Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: WHY CHOOSE US -->
+    <section id="why-choose-us" class="reveal py-5">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Value Proposition</span>
+          <h2 class="section-title d-block">Why Businesses Choose Nexora</h2>
+          <p class="section-desc">We combine strategy, engineering, and support to build products that deliver measurable results.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3">
+            <div class="why-item flex-column text-center text-md-start">
+              <div class="why-icon mx-auto mx-md-0"><i class="bi bi-graph-up-arrow"></i></div>
+              <div>
+                <h3 class="why-title">Business-Focused</h3>
+                <p class="why-desc">Technology designed from the ground up around measurable performance targets and user growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="why-item flex-column text-center text-md-start">
+              <div class="why-icon mx-auto mx-md-0"><i class="bi bi-people-fill"></i></div>
+              <div>
+                <h3 class="why-title">Experienced Team</h3>
+                <p class="why-desc">Engineers and product designers who understand how to structure stable, high-availability networks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="why-item flex-column text-center text-md-start">
+              <div class="why-icon mx-auto mx-md-0"><i class="bi bi-kanban"></i></div>
+              <div>
+                <h3 class="why-title">Agile Dev Flow</h3>
+                <p class="why-desc">Weekly progress sprints and interactive review dashboards keeping you fully in control of the build.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="why-item flex-column text-center text-md-start">
+              <div class="why-icon mx-auto mx-md-0"><i class="bi bi-activity"></i></div>
+              <div>
+                <h3 class="why-title">Long-Term Partner</h3>
+                <p class="why-desc">Continuous load testing, monitoring support, and scale optimizations following product release.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PORTFOLIO -->
+    <section id="portfolio" class="reveal py-5">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title d-block">Our Recent Work</h2>
+          <p class="section-desc">Explore how we help businesses transform requirements into highly optimized user experiences.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: Fintech Dashboard -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrapper">
+                <!-- SVG Fintech Mockup -->
+                <svg width="100%" height="220" viewBox="0 0 360 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="360" height="220" fill="var(--bg-tertiary)" />
+                  <!-- Grid structure -->
+                  <circle cx="180" cy="110" r="80" stroke="var(--card-border)" stroke-width="1" />
+                  <!-- Card visual representation -->
+                  <rect x="50" y="45" width="260" height="130" rx="10" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="1.5" />
+                  <rect x="70" y="65" width="40" height="25" rx="4" fill="var(--accent-color)" opacity="0.8" />
+                  <circle cx="280" cy="77" r="12" fill="var(--text-muted)" opacity="0.15" />
+                  <!-- Balance details line mock -->
+                  <rect x="70" y="110" width="80" height="6" rx="3" fill="var(--text-muted)" opacity="0.3" />
+                  <rect x="70" y="122" width="120" height="10" rx="4" fill="var(--text-primary)" />
+                  <!-- Chart overlay -->
+                  <path d="M 120,150 L 160,110 L 200,130 L 245,90 L 285,115" stroke="var(--success-color)" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="245" cy="90" r="4" fill="var(--success-color)" class="animated-pulse-dot" />
+                </svg>
+              </div>
+              <div class="portfolio-body">
+                <span class="portfolio-category">Fintech</span>
+                <h3 class="portfolio-title">Fintech Dashboard</h3>
+                <p class="portfolio-desc">A secure, multi-tier financial analytics interface displaying active user balances and transaction charts in real-time.</p>
+                <a href="#contact" class="portfolio-btn">View Project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: E-Commerce Platform -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrapper">
+                <!-- SVG E-Commerce Mockup -->
+                <svg width="100%" height="220" viewBox="0 0 360 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="360" height="220" fill="var(--bg-tertiary)" />
+                  <!-- Dashboard card items -->
+                  <rect x="40" y="30" width="130" height="160" rx="10" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="1.5" />
+                  <rect x="190" y="30" width="130" height="160" rx="10" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="1.5" />
+                  
+                  <!-- Product 1 Details -->
+                  <rect x="52" y="42" width="106" height="80" rx="6" fill="var(--bg-secondary)" />
+                  <circle cx="105" cy="82" r="22" fill="var(--accent-color)" opacity="0.15" />
+                  <rect x="52" y="132" width="80" height="6" rx="3" fill="var(--text-primary)" />
+                  <rect x="52" y="144" width="40" height="6" rx="3" fill="var(--text-muted)" />
+                  <circle cx="150" cy="155" r="8" fill="var(--accent-color)" />
+
+                  <!-- Product 2 Details -->
+                  <rect x="202" y="42" width="106" height="80" rx="6" fill="var(--bg-secondary)" />
+                  <circle cx="255" cy="82" r="22" fill="var(--secondary-accent)" opacity="0.15" />
+                  <rect x="202" y="132" width="70" height="6" rx="3" fill="var(--text-primary)" />
+                  <rect x="202" y="144" width="40" height="6" rx="3" fill="var(--text-muted)" />
+                  <circle cx="300" cy="155" r="8" fill="var(--accent-color)" />
+                </svg>
+              </div>
+              <div class="portfolio-body">
+                <span class="portfolio-category">E-Commerce</span>
+                <h3 class="portfolio-title">E-Commerce Platform</h3>
+                <p class="portfolio-desc">High-speed modular online store structure integrated with payment checking and responsive product cart navigation.</p>
+                <a href="#contact" class="portfolio-btn">View Project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Healthcare Mobile App -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrapper">
+                <!-- SVG Mobile Healthcare Mockup -->
+                <svg width="100%" height="220" viewBox="0 0 360 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="360" height="220" fill="var(--bg-tertiary)" />
+                  <!-- Smartphone Body -->
+                  <rect x="120" y="20" width="120" height="180" rx="18" fill="var(--card-bg)" stroke="var(--card-border)" stroke-width="2" />
+                  <rect x="125" y="25" width="110" height="170" rx="14" fill="#090d16" />
+                  <!-- Camera cutout -->
+                  <rect x="165" y="30" width="30" height="6" rx="3" fill="var(--text-muted)" opacity="0.4" />
+                  <!-- Heartbeat active UI -->
+                  <circle cx="175" cy="90" r="32" fill="rgba(239, 68, 68, 0.15)" />
+                  <path d="M150 90 L160 90 L165 75 L173 110 L180 83 L186 95 L192 90 L200 90" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <rect x="145" y="140" width="60" height="6" rx="3" fill="var(--success-color)" />
+                  <rect x="145" y="152" width="60" height="14" rx="4" fill="var(--card-bg)" />
+                  <circle cx="152" cy="159" r="3" fill="var(--accent-color)" />
+                </svg>
+              </div>
+              <div class="portfolio-body">
+                <span class="portfolio-category">Healthcare</span>
+                <h3 class="portfolio-title">Healthcare Mobile App</h3>
+                <p class="portfolio-desc">User-friendly iOS and Android application with custom patient dashboard tracking and doctor scheduling integrations.</p>
+                <a href="#contact" class="portfolio-btn">View Project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TESTIMONIALS -->
+    <section id="testimonials" class="reveal py-5">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Client Reviews</span>
+          <h2 class="section-title d-block">What Our Clients Say</h2>
+          <p class="section-desc">Fictional marketing executives and developers explain their experience collaborating with Nexora.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <!-- Testimonial 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">Nexora transformed our idea into a product that our customers genuinely love. Their attention to detail and communication were excellent.</p>
+              <div class="client-info-box">
+                <svg width="48" height="48" viewBox="0 0 48 48" class="client-avatar">
+                  <circle cx="24" cy="24" r="24" fill="var(--bg-tertiary)" />
+                  <circle cx="24" cy="18" r="8" fill="var(--accent-color)" />
+                  <path d="M12,38 C12,31 17,28 24,28 C31,28 36,31 36,38 Z" fill="var(--accent-color)" />
+                </svg>
+                <div>
+                  <h4 class="client-name">Sarah Jenkins</h4>
+                  <div class="client-title">Product Director, FinGo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">The technical expertise of the team at Nexora was outstanding. They migrated our legacy systems to a cloud structure with zero downtime.</p>
+              <div class="client-info-box">
+                <svg width="48" height="48" viewBox="0 0 48 48" class="client-avatar">
+                  <circle cx="24" cy="24" r="24" fill="var(--bg-tertiary)" />
+                  <circle cx="24" cy="18" r="8" fill="var(--secondary-accent)" />
+                  <path d="M12,38 C12,31 17,28 24,28 C31,28 36,31 36,38 Z" fill="var(--secondary-accent)" />
+                </svg>
+                <div>
+                  <h4 class="client-name">David Chen</h4>
+                  <div class="client-title">Founder, ShopVibe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">Their UI/UX design is clean, practical, and highly intuitive. Our mobile application has received amazing feedback since launch.</p>
+              <div class="client-info-box">
+                <svg width="48" height="48" viewBox="0 0 48 48" class="client-avatar">
+                  <circle cx="24" cy="24" r="24" fill="var(--bg-tertiary)" />
+                  <circle cx="24" cy="18" r="8" fill="var(--success-color)" />
+                  <path d="M12,38 C12,31 17,28 24,28 C31,28 36,31 36,38 Z" fill="var(--success-color)" />
+                </svg>
+                <div>
+                  <h4 class="client-name">Dr. Priya Mehta</h4>
+                  <div class="client-title">Co-Founder, CarePulse</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CTA -->
+    <section id="cta-cta" class="reveal py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="cta-sec text-center">
+              <h2 class="cta-title">Ready to Turn Your Idea Into Reality?</h2>
+              <p class="cta-desc">Let's build a digital solution that creates real business impact. Our team is ready to analyze your requirements and construct a prototype deployment.</p>
+              <a href="#contact" class="btn-custom btn-cta font-headings">
+                Let's Talk <i class="bi bi-chat-left-dots-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="reveal py-5">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title d-block">Contact Our Experts</h2>
+          <p class="section-desc">Have a question or ready to launch? Write details about your request below, and we'll reply within 24 hours.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <!-- Contact Info Sidebar -->
+          <div class="col-lg-5">
+            <div class="contact-sidebar">
+              <h3 class="display-font fs-4 mb-4 text-primary">Office Coordinates</h3>
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+                  <div class="contact-info-text">
+                    <h6>Email Us</h6>
+                    <p>info@nexora.com</p>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+                  <div class="contact-info-text">
+                    <h6>Call Us</h6>
+                    <p>+91 20 1234 567</p>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+                  <div class="contact-info-text">
+                    <h6>Office Address</h6>
+                    <p>Pune, Maharashtra, India</p>
+                  </div>
+                </li>
+              </ul>
+              
+              <!-- Custom Stylized Geographical Map SVG -->
+              <svg class="map-placeholder-svg" viewBox="0 0 340 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Nexora Pune Office Map Mockup">
+                <rect width="340" height="200" rx="8" fill="var(--card-bg)" />
+                <path d="M 0,100 Q 170,180 340,100" stroke="var(--card-border)" stroke-width="1.5" />
+                <path d="M 0,130 Q 170,60 340,130" stroke="var(--card-border)" stroke-width="1.5" />
+                <path d="M 40,0 L 300,200" stroke="var(--card-border)" stroke-width="1" stroke-dasharray="2 2" />
+                <path d="M 300,0 L 40,200" stroke="var(--card-border)" stroke-width="1" stroke-dasharray="2 2" />
+                
+                <!-- Map connection nodes -->
+                <circle cx="100" cy="80" r="4" fill="var(--text-muted)" opacity="0.4" />
+                <circle cx="240" cy="140" r="4" fill="var(--text-muted)" opacity="0.4" />
+                <circle cx="70" cy="150" r="4" fill="var(--text-muted)" opacity="0.4" />
+                <circle cx="280" cy="60" r="4" fill="var(--text-muted)" opacity="0.4" />
+                
+                <!-- Main Pune HQ Pin Location -->
+                <g transform="translate(170, 100)">
+                  <circle cx="0" cy="0" r="16" fill="rgba(59, 130, 246, 0.15)" class="animated-pulse-dot" />
+                  <circle cx="0" cy="0" r="6" fill="var(--accent-color)" />
+                  <!-- Pin label -->
+                  <rect x="-35" y="-30" width="70" height="18" rx="4" fill="var(--text-primary)" />
+                  <text x="0" y="-18" fill="var(--card-bg)" font-family="var(--font-body)" font-size="8" font-weight="700" text-anchor="middle">NEXORA HQ</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="col-lg-7">
+            <form id="nexoraContactForm" novalidate class="h-100 d-flex flex-column justify-content-between">
+              <div class="row g-3">
+                <!-- Name input -->
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label font-headings fw-bold fs-6">Full Name</label>
+                  <input type="text" class="form-control form-control-custom" id="contactName" placeholder="John Doe" required>
+                  <div class="invalid-feedback-custom">Please enter valid name (minimum 2 characters).</div>
+                </div>
+
+                <!-- Email Input -->
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label font-headings fw-bold fs-6">Email Address</label>
+                  <input type="email" class="form-control form-control-custom" id="contactEmail" placeholder="john@example.com" required>
+                  <div class="invalid-feedback-custom">Please enter a valid active email address.</div>
+                </div>
+
+                <!-- Phone Input -->
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label font-headings fw-bold fs-6">Phone Number <span class="text-muted">(Optional)</span></label>
+                  <input type="tel" class="form-control form-control-custom" id="contactPhone" placeholder="+91 98765 43210">
+                  <div class="invalid-feedback-custom">Please enter a valid phone number (10+ digits).</div>
+                </div>
+
+                <!-- Subject Dropdown -->
+                <div class="col-md-6">
+                  <label for="contactSubject" class="form-label font-headings fw-bold fs-6">Service Required</label>
+                  <select class="form-select form-control-custom" id="contactSubject" required>
+                    <option value="" selected disabled>Select a digital service...</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Cloud Solutions">Cloud Solutions</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="General Inquiry">General Inquiry / Consulting</option>
+                  </select>
+                  <div class="invalid-feedback-custom">Please select one of the services from the list.</div>
+                </div>
+
+                <!-- Message Input -->
+                <div class="col-12 mt-3">
+                  <label for="contactMessage" class="form-label font-headings fw-bold fs-6">Tell Us About Your Project</label>
+                  <textarea class="form-control form-control-custom" id="contactMessage" rows="5" placeholder="Provide a brief description of project scope, timelines, or goals..." required></textarea>
+                  <div class="invalid-feedback-custom">Please supply details about your inquiry (minimum 10 characters).</div>
+                </div>
+              </div>
+
+              <!-- Submit button -->
+              <div class="text-end mt-4">
+                <button type="submit" class="btn-custom btn-custom-primary">
+                  Send Message <i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="footer-sec">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-logo" href="#hero">
+            <i class="bi bi-cpu text-primary"></i>
+            <span>Nexora</span> Technologies
+          </a>
+          <p class="footer-desc">Turning ideas into enterprise digital products with cutting-edge technologies, professional team members, and stable scalable operations.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:info@nexora.com" class="text-lowercase"><i class="bi bi-envelope me-2 text-primary"></i>info@nexora.com</a></li>
+            <li><a href="tel:+91201234567"><i class="bi bi-telephone me-2 text-primary"></i>+91 20 1234 567</a></li>
+            <li><span><i class="bi bi-geo-alt me-2 text-primary"></i>Pune, India</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 Nexora Technologies. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Utilities and UI items -->
+  <button id="btn-back-to-top" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <div id="successToast" class="toast-custom" role="alert" aria-live="assertive" aria-atomic="true">
+    <i class="bi bi-check-circle-fill"></i>
+    <div class="toast-custom-text">
+      Thank you! Your message has been sent successfully.
+    </div>
+  </div>
+
+  <!-- BootStrap Script Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
